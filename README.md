@@ -1,4 +1,4 @@
-# DataBindingSample
+## DataBindingSample
 #### Basic Data Binding Example (Beginner Level) 
 Here You Learn DataBinding Basics With Activity Adapter Dialog Recyclerview
 Conditions like Ternery Operator
