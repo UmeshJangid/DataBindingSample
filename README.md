@@ -1,8 +1,5 @@
 # DataBindingSample
-# Simple Basic Data Binding Example
-Here You Learn DataBinding Basics(Beginner Level)
-With Activity
-with Adapter
-with Dialog
+# Basic Data Binding Example (Beginner Level) 
+Here You Learn DataBinding Basics With Activity Adapter Dialog
 Conditions like Ternery Operator
-and many more in future will add.Stay tuned :) 
+and many more in future will add, so Stay tuned :) 
