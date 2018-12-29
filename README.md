@@ -11,38 +11,38 @@ Android DataBinding provides a way to tie the UI with business logic allowing th
 
 #### Steps to use Data Binding.
 
-Just make sure that you are using android support library\
+Just make sure that you are using android support library
 than in build.gradle (app)\
-// enable data binding for app here\
-android {\
+// enable data binding for app here
+android {
     ...\
-    dataBinding {\
-        enabled = true\
-    }\
+    dataBinding {
+        enabled = true
+    }
 }
 
 Than start making your layout \
 ex.\
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto">\
+        xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
-        <import import any class (Which you wnat to use in layout file)/>\
+        <import import any class (Which you wnat to use in layout file)/>
         <variable (Define your own variable )\
-            name="viewmodel"\
-            type="com.myapp.data.ViewModel" />\
-    </data>\
-    <ConstraintLayout... /> <!-- UI layout's root element -->\
-</layout>\
+            name="viewmodel"
+            type="com.myapp.data.ViewModel" />
+    </data>
+    <ConstraintLayout... /> <!-- UI layout's root element -->
+</layout>
 
 #### 1.Remove boilerplate code >
-Reduces boilerplate code which in turns brings \
-Less coupling\
-Stronger readability\
-Powerful, easy to implement custom attribute and custom view\
-Even faster than findViewById (details)\
+Reduces boilerplate code which in turns brings 
+Less coupling
+Stronger readability
+Powerful, easy to implement custom attribute and custom view
+Even faster than findViewById (details)
 
 #### 2.Stronger readability >
-Depends if you are a new developer then you may find it easy to learn it but if you previously worked on android you will need extra time to learn it.\
+Depends if you are a new developer then you may find it easy to learn it but if you previously worked on android you will need extra time to learn it.
 
 #### 3.Powerful >
 The code has more power, you can implement whatever you like in code. Think about it like this, everything you implement using data binding has a code equivalent (it might be longer and more code to write), but the revers is not valid.
