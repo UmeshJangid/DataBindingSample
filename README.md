@@ -14,25 +14,29 @@ Android DataBinding provides a way to tie the UI with business logic allowing th
 Just make sure that you are using android support library
 than in build.gradle (app)\
 // enable data binding for app here
+```
 android {
-    ...\
+    ...
     dataBinding {
         enabled = true
     }
 }
+```
 
-Than start making your layout \
+Than start making your layout 
 ex.\
+```
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <import import any class (Which you wnat to use in layout file)/>
-        <variable (Define your own variable )\
+        <variable (Define your own variable )
             name="viewmodel"
             type="com.myapp.data.ViewModel" />
     </data>
     <ConstraintLayout... /> <!-- UI layout's root element -->
 </layout>
+```
 
 #### 1.Remove boilerplate code >
 Reduces boilerplate code which in turns brings 
