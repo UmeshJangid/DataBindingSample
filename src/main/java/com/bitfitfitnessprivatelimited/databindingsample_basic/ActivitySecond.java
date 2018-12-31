@@ -40,7 +40,7 @@ public class ActivitySecond extends AppCompatActivity implements MyDemoAdapter.E
     private List<EmpInfoModal> getEmpInfo() {
         List<EmpInfoModal> empInfoModals = new ArrayList<>();
         for (int i = 1; i <= 20; i++) {
-            EmpInfoModal empInfoModal = new EmpInfoModal("Test" + i, 26, "SE(Android)", i, (5550 + i), 2.5f);
+            EmpInfoModal empInfoModal = new EmpInfoModal("Test" + i, 26, "SE(Android)", i, "https://www.gstatic.com/webp/gallery/1.jpg", (5550 + i), 2.5f);
             empInfoModals.add(empInfoModal);
         }
         return empInfoModals;

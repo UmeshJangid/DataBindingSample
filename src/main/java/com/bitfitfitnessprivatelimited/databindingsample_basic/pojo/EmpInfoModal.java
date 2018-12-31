@@ -1,7 +1,5 @@
 package com.bitfitfitnessprivatelimited.databindingsample_basic.pojo;
 
-import java.math.BigDecimal;
-
 /**
  * Created on Android Studio
  * Author: Umesh
@@ -15,17 +13,20 @@ public class EmpInfoModal {
     private int age;
     private String dept;
     private int emp_id;
+    private String drawable;
     private long salaryPackage;
     private float avgRate;
 
-    public EmpInfoModal(String name, int age, String dept, int emp_id, long salaryPackage, float avgRate) {
+    public EmpInfoModal(String name, int age, String dept, int emp_id, String drawable, long salaryPackage, float avgRate) {
         this.name = name;
         this.age = age;
         this.dept = dept;
         this.emp_id = emp_id;
+        this.drawable = drawable;
         this.salaryPackage = salaryPackage;
         this.avgRate = avgRate;
     }
+
 
     public boolean checkToShowRating() {
         if (avgRate > 0) {
@@ -33,9 +34,7 @@ public class EmpInfoModal {
         } else {
             return false;
         }
-
     }
-
     public float getAvgRate() {
         return avgRate;
     }
@@ -82,5 +81,13 @@ public class EmpInfoModal {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String  getDrawable() {
+        return drawable;
+    }
+
+    public void setDrawable(String drawable) {
+        this.drawable = drawable;
     }
 }

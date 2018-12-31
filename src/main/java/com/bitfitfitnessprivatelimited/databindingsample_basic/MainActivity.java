@@ -15,7 +15,6 @@ import com.bitfitfitnessprivatelimited.databindingsample_basic.databinding.Activ
 import com.bitfitfitnessprivatelimited.databindingsample_basic.interfaces.NormalInterface;
 import com.bitfitfitnessprivatelimited.databindingsample_basic.pojo.EmpInfoModal;
 
-import java.math.BigDecimal;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity implements NormalInterface {
@@ -26,17 +25,17 @@ public class MainActivity extends AppCompatActivity implements NormalInterface {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-        empInfoModal = new EmpInfoModal("Ankit Luka", 28, "DotNet", 1001, 5500, 3.5f);
+        empInfoModal = new EmpInfoModal("Umesh Jangid", 28, "Programmer", 1001, "https://www.gstatic.com/webp/gallery/1.jpg", 5500, 4.5f);
         // empInfoModal = new EmpInfoModal("Ankit Luka", 28, "DotNet", 1001, 5500, new BigDecimal(0));
         binding.setEmpinfo(empInfoModal);
         binding.setNormalInterface((NormalInterface) this);
+        binding.setTesturl("https://avatars3.githubusercontent.com/u/10571832?s=400&u=ed8bec7d43de36c3b37c756761249e5b65d7a38a&v=4");
         binding.next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ActivitySecond.class));
             }
         });
-        //
     }
 
     @Override
