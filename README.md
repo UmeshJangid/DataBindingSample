@@ -12,7 +12,7 @@ Android DataBinding provides a way to tie the UI with business logic allowing th
 #### Steps to use Data Binding.
 
 Just make sure that you are using android support library
-than in build.gradle (app)\
+than in build.gradle (app)
 // enable data binding for app here
 ```
 android {
